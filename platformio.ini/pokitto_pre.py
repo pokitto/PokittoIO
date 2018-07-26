@@ -15,7 +15,7 @@ patchPath = basePath + '/packages/framework-mbed/targets/TARGET_NXP/TARGET_LPC11
 
 #get the latest startup files from github
 print("Comparing startup_LPC11U68.cpp to PokittoLib repository...")
-url = 'https://raw.githubusercontent.com/pokitto/PokittoLib/master/Pokitto/mbed-pokitto/targets/cmsis/TARGET_NXP/TARGET_LPC11U6X/TOOLCHAIN_GCC_ARM/TARGET_LPC11U68/startup_LPC11U68.cpp'
+url = 'https://raw.githubusercontent.com/pokitto/PokittoIO/master/src/hal/LPC11U68/mbed_patches/arm_gcc/startup_LPC11U68.cpp'
 r = requests.get(url, allow_redirects=True, headers={'Cache-Control': 'no-cache'})
 open(patchPath + 'startup_LPC11U68.tmp', 'wb').write(r.content)
 
@@ -42,7 +42,7 @@ if (os.path.exists(patchPath + 'startup_LPC11U68.tmp')):
 
 #get the latest linker file from github
 print("Comparing linker file LPC11U68.ld to PokittoLib repository...")
-url = 'https://raw.githubusercontent.com/pokitto/PokittoLib/master/Pokitto/mbed-pokitto/targets/cmsis/TARGET_NXP/TARGET_LPC11U6X/TOOLCHAIN_GCC_ARM/TARGET_LPC11U68/LPC11U68.ld'
+url = 'https://raw.githubusercontent.com/pokitto/PokittoIO/master/src/hal/LPC11U68/mbed_patches/arm_gcc/LPC11U68.ld'
 r = requests.get(url, allow_redirects=True, headers={'Cache-Control': 'no-cache'})
 open(patchPath + 'LPC11U68.tmp', 'wb').write(r.content)
 
