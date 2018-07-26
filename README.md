@@ -19,6 +19,7 @@ board = lpc11u68
 framework = mbed
 build_flags =
   -DPOKITTO_PIO_BUILD
+  -Isrc
 extra_scripts = pre:pokitto_pre.py
 ```
 
