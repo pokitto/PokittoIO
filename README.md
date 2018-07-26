@@ -94,7 +94,30 @@ else:
 os.remove(patchPath+'LPC11U68.tmp')
 ```
 
-## License
+## Example of a My_settings.h file
+
+```
+/**************************************************************************/
+/*!
+    @file     My_settings.h
+    @author   XX
+
+    @section HOW TO USE My_settings
+
+   My_settings can be used to set project settings inside the mbed online IDE
+*/
+/**************************************************************************/
+
+#ifndef MY_SETTINGS_H
+#define MY_SETTINGS_H
+
+#define PROJ_HIRES 0            //1 = high resolution (220x176) , 0 = low resolution fast mode (110x88)
+#define PROJ_ENABLE_SOUND 0     // 0 = all sound functions disabled
+
+#endif
+```
+
+# License
 ```
 /**************************************************************************/
 
@@ -129,25 +152,39 @@ os.remove(patchPath+'LPC11U68.tmp')
 	
 /**************************************************************************/
 ```
-## Example of a My_settings.h file
 
+## License
 ```
 /**************************************************************************/
-/*!
-    @file     My_settings.h
-    @author   XX
 
-    @section HOW TO USE My_settings
+	PokittoIO / PokittoLib
 
-   My_settings can be used to set project settings inside the mbed online IDE
-*/
+    Software License Agreement (BSD License)
+
+    Copyright (c) 2016-2018, Jonne Valola
+    All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+    1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+    3. Neither the name of the copyright holders nor the
+    names of its contributors may be used to endorse or promote products
+    derived from this software without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+    EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	
 /**************************************************************************/
-
-#ifndef MY_SETTINGS_H
-#define MY_SETTINGS_H
-
-#define PROJ_HIRES 0            //1 = high resolution (220x176) , 0 = low resolution fast mode (110x88)
-#define PROJ_ENABLE_SOUND 0     // 0 = all sound functions disabled
-
-#endif
 ```
