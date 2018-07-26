@@ -1,4 +1,4 @@
-# PokittoIO - core of PokittoLib reformatted for PlatformIO building
+# PokittoIO - core of PokittoLib reformatted for PlatformIO
 
 PokittoLib is a library for making programs on Pokitto hardware
 
@@ -95,7 +95,7 @@ os.remove(patchPath+'LPC11U68.tmp')
 ```
 
 ## License
-
+```
 /**************************************************************************/
 
 	PokittoIO / PokittoLib
@@ -128,7 +128,7 @@ os.remove(patchPath+'LPC11U68.tmp')
     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	
 /**************************************************************************/
-
+```
 ## Example of a My_settings.h file
 
 ```
