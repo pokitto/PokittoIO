@@ -37,7 +37,8 @@ else:
     open(patchPath + 'startup_LPC11U68.cpp', 'wb').write(r.content)
 
 #delete temporary file(s)
-os.remove(patchPath+'startup_LPC11U68.tmp')
+if (os.path.exists(patchPath + 'startup_LPC11U68.tmp')):
+    os.remove(patchPath+'startup_LPC11U68.tmp')
 
 #get the latest linker file from github
 print("Comparing linker file LPC11U68.ld to PokittoLib repository...")
@@ -64,4 +65,5 @@ else:
     open(patchPath + 'LPC11U68.ld', 'wb').write(r.content)   
 
 #delete temporary file(s)
-os.remove(patchPath+'LPC11U68.tmp')
+if (os.path.exists(patchPath + 'LPC11U68.tmp')):
+    os.remove(patchPath+'LPC11U68.tmp')

@@ -24,7 +24,6 @@
   "platforms": "nxplpc",
   "build": {
     "flags": [
-	"-I .",
         "-I src",
 	"-I src/FONTS",
 	"-I src/PALETTES",
