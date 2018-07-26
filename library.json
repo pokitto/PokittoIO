@@ -1,0 +1,37 @@
+{
+  "name": "Pokitto",
+  "keywords": "Pokitto, gaming, lcd, audio",
+  "description": "Pokitto DIY game console core lib",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/pokitto/PokittoIO.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Jonne Valola",
+      "email": "jonne@pokitto.com",
+      "url": "http://www.pokitto.com",
+      "maintainer": true
+    }
+  ],
+  "dependencies":
+  {
+  },
+  "version": "0.0.1",
+  "frameworks": "mbed",
+  "platforms": "nxplpc",
+  "build": {
+    "flags": [
+        "-I src",
+	"-I src/FONTS",
+	"-I src/PALETTES",
+        "-I hal/LPC11U68",
+	"-I libs/libpff",
+	"-I libs/Synth",
+	"-I libs/SDFileSystem"
+    ]
+}
+}
+
