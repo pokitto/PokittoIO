@@ -150,7 +150,11 @@ AFTER_VECTORS void ResetISR(void) {
     }
     
     SystemInit();
+    #ifndef POKITTO_PIO_BUILD
     if (software_init_hook) 
+    #else
+    if (0)
+    #endif 
         software_init_hook(); 
     else {
         __libc_init_array();

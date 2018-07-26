@@ -24,13 +24,15 @@
   "platforms": "nxplpc",
   "build": {
     "flags": [
-        "-I src",
-	"-I src/FONTS",
-	"-I src/PALETTES",
-        "-I hal/LPC11U68",
-	"-I libs/libpff",
-	"-I libs/Synth",
-	"-I libs/SDFileSystem"
+      "-I src/hal/LPC11U68",
+      "-I src",
+	    "-I src/FONTS",
+	    "-I src/PALETTES",
+	    "-I src/libs/libpff",
+	    "-I src/libs/Synth",
+	    "-I src/libs/SDFileSystem",
+      "-I src/libs/SDFileSystem/FATFileSystem",
+      "-I src/libs/SDFileSystem/FATFileSystem/ChaN"
     ]
 }
 }
