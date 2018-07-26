@@ -152,6 +152,7 @@ AFTER_VECTORS void ResetISR(void) {
     SystemInit();
     #ifndef POKITTO_PIO_BUILD
     if (software_init_hook) 
+        software_init_hook(); 
     #else
     if (1) {
         mbed_copy_nvic();
@@ -160,7 +161,6 @@ AFTER_VECTORS void ResetISR(void) {
         main();
     }
     #endif 
-        software_init_hook(); 
     else {
         __libc_init_array();
         main();
