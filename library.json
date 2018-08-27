@@ -31,6 +31,7 @@
 	    "-I src/libs/libpff",
 	    "-I src/libs/Synth",
 	    "-I src/libs/SDFileSystem",
+		"-I src/libs/FixMath",
       "-I src/libs/SDFileSystem/FATFileSystem",
       "-I src/libs/SDFileSystem/FATFileSystem/ChaN"
     ]
