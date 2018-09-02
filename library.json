@@ -19,7 +19,7 @@
   "dependencies":
   {
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "frameworks": "mbed",
   "platforms": "nxplpc",
   "build": {
@@ -30,10 +30,7 @@
 	    "-I src/PALETTES",
 	    "-I src/libs/libpff",
 	    "-I src/libs/Synth",
-	    "-I src/libs/SDFileSystem",
-		"-I src/libs/FixMath",
-      "-I src/libs/SDFileSystem/FATFileSystem",
-      "-I src/libs/SDFileSystem/FATFileSystem/ChaN"
+	    "-I src/libs/FixMath"
     ]
 }
 }
