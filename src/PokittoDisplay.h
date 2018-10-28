@@ -141,12 +141,14 @@ public:
 private:
     static uint8_t* canvas;
     static uint8_t bpp;
-    static uint8_t m_colordepth;
 public:
+    static uint8_t m_colordepth; // public to be used elsewhere
+    static uint8_t subMode; // for mixed mode switching
     static uint8_t palOffset;
     static uint8_t width;
     static uint8_t height;
     static uint8_t screenbuffer[];
+    static uint8_t scanType[]; // for mixed screen mode
 
     // PROPERTIES
     static void setColorDepth(uint8_t);
@@ -391,7 +393,7 @@ public:
     static int16_t cursorX,cursorY;
     static uint8_t fontSize;
     static int8_t adjustCharStep, adjustLineStep;
-	static bool fixedWidthFont;
+	static bool fixedWidthFont, flipFontVertical;
 
     static void inc_txtline();
     static void printNumber(unsigned long, uint8_t);
