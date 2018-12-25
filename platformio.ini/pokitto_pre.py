@@ -1,10 +1,11 @@
+Import("env")
+
 import requests
 import os
 import filecmp
 
-#the following is needed, because at this stage PLATFORMIO_HOME_DIR is undefined
-from os.path import expanduser
-home = expanduser("~")
+# Works even if the user has overrided PLATFORMIO_HOME_DIR
+home = env['PIOHOME_DIR']
 
 if os.name == 'nt': # Windows
     basePath = home + '\.platformio'
