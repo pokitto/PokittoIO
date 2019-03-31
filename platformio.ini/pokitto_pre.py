@@ -7,12 +7,7 @@ import filecmp
 # Works even if the user has overrided PLATFORMIO_HOME_DIR
 home = env['PIOHOME_DIR']
 
-if os.name == 'nt': # Windows
-    basePath = home + '\.platformio'
-else:
-    basePath = home + '/.platformio'
-
-patchPath = basePath + '/packages/framework-mbed/targets/TARGET_NXP/TARGET_LPC11U6X/device/TOOLCHAIN_GCC_ARM/TARGET_LPC11U68/'
+patchPath = home + '/packages/framework-mbed/targets/TARGET_NXP/TARGET_LPC11U6X/device/TOOLCHAIN_GCC_ARM/TARGET_LPC11U68/'
 
 #get the latest startup files from github
 print("Comparing startup_LPC11U68.cpp to PokittoLib repository...")
